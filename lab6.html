@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; background-color: antiquewhite; }
+        h1, h2, h3 { color: navy; text-align: center; }
+
+        /* Desktop View Styles */
+        .container { border: 2px solid navy; padding: 20px; text-align: center; }
+        .mcontainer { display: none; } /* Mobile hidden by default */
+        .last-item { align-self: flex-end; font-weight: bold; }
+
+        /* Mobile View Styles (Media Query) */
+        @media (max-width: 480px) {
+            .container { display: none !important; } /* Desktop hidden */
+            .mcontainer { 
+                display: block !important; 
+                background-color: aqua !important; 
+                color: blue !important; 
+                padding: 20px; 
+                text-align: center; 
+            }
+            .m-last-item { font-weight: bold; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Web Technologies Handout</h1>
+        <h2>Course: CSS-336 (2+1)</h2>
+        <p>Semester: Fall 2025</p>
+        <ol>
+            <li>Experiment 1</li>
+            <li>Experiment 2</li>
+            <li>Experiment 3</li>
+            <li>Experiment 4</li>
+            <li>Experiment 5</li>
+            <li class="last-item">Experiment 6: Web Responsiveness</li>
+        </ol>
+    </div>
+
+    <div class="mcontainer">
+        <h3>Lab List</h3>
+        <ol>
+            <li>Lab1</li>
+            <li>Lab2</li>
+            <li>Lab3</li>
+            <li>Lab4</li>
+            <li>Lab5</li>
+            <li class="m-last-item">Lab6</li>
+        </ol>
+    </div>
+
+</body>
+</html>
